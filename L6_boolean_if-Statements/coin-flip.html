@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coin Flip</title>
+</head>
+<body>
+  
+  <script>
+    let guess = 'heads';
+      let coinToss = Math.random();
+      let result = '';
+      if(coinToss >= 0 && coinToss < 1/2)
+      {
+        result = 'heads';
+      }else
+      {
+        result = 'tails';
+      }
+
+
+      if(guess === result)
+      {
+        console.log('You Win');
+      }else{
+        console.log('You Lose');
+      }
+
+      let tossResult = (guess === result)?'You Win!':'You Lose!'
+        console.log(tossResult);
+      
+  </script>
+</body>
+</html>
