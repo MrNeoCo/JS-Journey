@@ -5,9 +5,103 @@
     <title>Rock Paper Scissor</title>
     <body>
       <p>Rock  Paper Scissor</p>
-      <button>Rock</button>
-      <button>Paper</button>
-      <button>Scissor</button>
+
+      <button
+        onclick="
+          let randomNumber = Math.random();
+          let computerMove = '';
+            
+            if(randomNumber >= 0 && randomNumber < 1/2)
+            {
+              computerMove = 'rock';
+            }else if(randomNumber >= 1/3 && randomNumber < 2/3)
+            {
+              computerMove = 'paper';
+            }else if(randomNumber >= 2/3 && randomNumber < 1)
+            {
+              computerMove = 'scissor';
+            }
+
+            let result = '';
+            if(computerMove === 'rock')
+            {
+              result = 'tie';
+            } else if(computerMove === 'scissor')
+            {
+              result = 'You Win';
+            }else if(computerMove === 'paper')
+            {
+              result = 'You Lose';
+            }
+          
+            alert(`You Picked rock, Computer Picked ${computerMove}, result ${result}`);
+
+
+        ">Rock</button>
+
+      <button 
+        onclick="
+          let randomNumber = Math.random();
+          let computerMove = '';
+            
+            if(randomNumber >= 0 && randomNumber < 1/2)
+            {
+              computerMove = 'rock';
+            }else if(randomNumber >= 1/3 && randomNumber < 2/3)
+            {
+              computerMove = 'paper';
+            }else if(randomNumber >= 2/3 && randomNumber < 1)
+            {
+              computerMove = 'scissor';
+            }
+
+            let result = '';
+            if(computerMove === 'rock')
+            {
+              result = 'You Win';
+            } else if(computerMove === 'scissor')
+            {
+              result = 'You Lose';
+            }else if(computerMove === 'paper')
+            {
+              result = 'tie';
+            }
+          
+            alert(`You Picked paper, Computer Picked ${computerMove}, result ${result}`);
+
+        ">Paper</button>
+
+      <button
+      onclick="
+          let randomNumber = Math.random();
+          let computerMove = '';
+            
+            if(randomNumber >= 0 && randomNumber < 1/2)
+            {
+              computerMove = 'rock';
+            }else if(randomNumber >= 1/3 && randomNumber < 2/3)
+            {
+              computerMove = 'paper';
+            }else if(randomNumber >= 2/3 && randomNumber < 1)
+            {
+              computerMove = 'scissor';
+            }
+
+            let result = '';
+            if(computerMove === 'rock')
+            {
+              result = 'You Lose';
+            } else if(computerMove === 'scissor')
+            {
+              result = 'tie';
+            }else if(computerMove === 'paper')
+            {
+              result = 'You Win';
+            }
+          
+            alert(`You Picked scissor, Computer Picked ${computerMove}, result ${result}`);
+
+        ">Scissor</button>
       <p><a href="#">Click here</a>to see the final version of the project</p>
       <script>
 
