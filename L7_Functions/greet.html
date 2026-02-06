@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Greet</title>
+</head>
+<body>
+
+  <button
+    onclick="
+      greet('Nitin');
+      greet('Amit');
+      greet('Simon');
+      greet('Ankush');
+      greet();
+  ">Greet</button>
+    
+  <script>
+                      // name = 'hi there'   ---- Default parameter
+      function greet(name){
+        if(name === undefined){
+            console.log(`Hello, hi there`);
+          }else{
+             console.log(`Hello, ${name}`);
+        }
+      }
+
+  </script>
+</body>
+</html>

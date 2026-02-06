@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Length from to</title>
+</head>
+<body>
+
+  <button onclick="
+      convertLength(50, 'miles', 'km');
+      convertLength(32, 'km', 'miles');
+      convertLength(50, 'km', 'km');
+      convertLength(5, 'miles', 'km');
+      convertLength(5, 'miles', 'feet');
+      convertLength(5, 'km', 'feet');
+      convertLength(5, '3', 'ft');
+    
+  ">
+        length
+  </button>
+
+  <script>
+      function convertLength(length, from, to){
+        let result;
+          if(from === 'km' && to === 'miles'){
+            result = Math.round(length * 0.621371);
+            console.log(result);
+          }else if(from === 'miles' && to === 'km'){
+            result = Math.round(length * 1.60934);
+            console.log(result);
+          }else if(from === 'km' && to === 'feet'){
+            result = length * 3281;
+            console.log(result);
+          }else if(from === 'miles' && to === 'feet'){
+            result = length * 5280;
+            console.log(result);
+          }else if(from === to){
+            console.log(length);
+          }else{
+            console.log(`Invalid unit ${from}`);
+          }
+        return result;
+      }
+  </script>
+</body>
+</html>

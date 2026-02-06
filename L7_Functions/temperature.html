@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>temperature</title>
+</head>
+<body>
+  <button onclick="
+     let fahrenheit = convertToFehrenheit(30);
+      console.log(fahrenheit);
+  ">
+      convert to fahrenheit
+  </button>
+
+  <button onclick="
+      let celsius = convertToCelsius(86);
+      console.log(celsius);
+  ">
+      convert to Celsius
+  </button>
+
+  <button onclick="
+      convertTemperature(25, 'C');
+      convertTemperature(77, 'F');
+  ">
+      convert temp
+  </button>
+
+  <script>
+
+    function convertToFehrenheit(celsius){
+      let fahrenheit = (celsius * 9/5) + 32;
+      // console.log(fahrenheit);
+      return fahrenheit;
+    }
+
+    function convertToCelsius(fahrenheit){
+      let celsius = (fahrenheit - 32) * 5/9;
+      // console.log(celsius);
+      return celsius;
+    }
+
+    function convertTemperature(degree, unit){
+      if(unit === 'F'){
+        let result = convertToCelsius(degree);
+        console.log(`${result}, C°`);
+      }else if(unit === 'C'){
+        let result = convertToFehrenheit(degree);
+        console.log(`${result}, F°`);
+      }
+    }
+
+  </script>
+</body>
+</html>
