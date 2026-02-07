@@ -67,13 +67,15 @@
           if(cartQuantity + value > 10){
             alert('cart is full');
             return;
-          }else if(cartQuantity + value < 0){
+          }
+          if(cartQuantity + value < 0){
             alert('not enough item');
             return;
-          }else{
+          }
+
             cartQuantity += value;
             console.log(`Cart Quantity ${cartQuantity}`);
-          }
+          
         }
   </script>
 </body>
