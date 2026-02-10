@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Local Storage</title>
+</head>
+<body>
+    <button
+      onclick="
+        increaseByOne();
+    ">++</button>
+
+    <button onclick="
+    if(!JSON.parse(localStorage.getItem('count'))){
+      console.log(0);
+    }else{
+      console.log(JSON.parse(localStorage.getItem('count')));
+    }
+    ">Show Count</button>
+
+    <button onclick="
+      count = 0;
+      localStorage.removeItem('count');
+    ">reset</button>
+
+<script>
+  let count = localStorage.getItem('count');
+  if(!count){
+    count = 0;
+  }
+  function increaseByOne(){
+    count++;
+    localStorage.setItem('count', JSON.stringify(count));
+    console.log(count);
+  } 
+</script>
+</body>
+</html>

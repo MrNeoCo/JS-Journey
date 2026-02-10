@@ -22,19 +22,18 @@
         ">Scissor</button>
       
       <button onclick="
-
-        score.wins = 0;
-        score.ties = 0;
-        score.loses = 0;
-
+            score.wins = 0;
+            score.ties = 0;
+            score.loses = 0;
+            localStorage.removeItem('score');
         ">Reset Score</button>
 
         <p><a href="#">Click here</a>to see the final version of the project</p>
       <script>
 
-        let score = {
+        let score = JSON.parse(localStorage.getItem('score')) || {
           wins: 0,
-          loses: 0,
+          losses: 0,
           ties: 0
         };
 
@@ -86,6 +85,8 @@
           }else if(result === 'You Lose'){
             score.loses += 1;
           }
+
+          localStorage.setItem('score', JSON.stringify(score));
 
             alert(`You Picked ${playerMove}, Computer Picked ${computerMove}, result ${result}
 wins: ${score.wins}, ties: ${score.ties}, loses: ${score.loses}`);
