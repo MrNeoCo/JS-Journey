@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>8c</title>
+</head>
+<body>
+  
+  <script>
+    const basketball = {
+      name: 'basketball',
+      price: 2095,
+      ['delivery-time']: '3 days',
+      ['time-zone']: 'utc-5:30'
+    };
+
+    basketball.price = 2595;
+    console.log(basketball['delivery-time']);
+    console.log(basketball['time-zone']);
+  </script>
+</body>
+</html>
