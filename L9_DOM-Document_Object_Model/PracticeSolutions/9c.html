@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>9c</title>
+</head>
+<body>
+  
+  <button 
+    class="js-heads"
+    onclick="
+      const headElement = document.querySelector('.js-heads').innerHTML;
+      document.querySelector('.js-result').innerHTML = `You Chose ${headElement}`;
+  ">heads</button>
+
+  <button 
+    class="js-tails"
+    onclick="
+      const tailElement = document.querySelector('.js-tails').innerHTML;
+      document.querySelector('.js-result').innerHTML = `You Chose ${tailElement}`;
+  "
+    >tails</button>
+  <p class="js-result"></p>
+  <script>
+    console.log();
+    console.log(document.querySelector('.js-tails').innerHTML);
+  </script>
+</body>
+</html>
