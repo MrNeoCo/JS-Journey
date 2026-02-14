@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>9d</title>
+</head>
+<body>
+  
+  <input 
+    placeholder="Enter Your Name"
+    class="js-name-element"
+  >
+  <button  
+    onclick="
+          captureName();
+    " class="js-submit-button">submit</button>
+
+  <p class="js-result-element"></p>
+
+  <script>
+    function captureName(){
+        const inputElement = document.querySelector('.js-name-element');
+        const name = inputElement.value;
+        document.querySelector('.js-result-element').innerHTML = `Your Name is ${name}`;
+    }
+
+    
+  </script>
+</body>
+</html>

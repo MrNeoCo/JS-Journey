@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Amazon Shipping Calculator</title>
+  <title>7.99 fix - Amazon Shipping Calculator</title>
 </head>
 <body>
   <p>Amazon Shipping Calculator</p>
@@ -19,19 +19,20 @@
   <script>
 
     function handelCostKeydown(event){
-       console.log('Typng...');
-      console.log(event.key);
+      //  console.log('Typng...');
+      // console.log(event.key);
       if(event.key === 'Enter'){
         calculateTotal();
       }
     }
     function calculateTotal(){
       const inputElement = document.querySelector('.js-cost-input');
-      let cost = Number(inputElement.value);
-      if(cost < 40){
-        cost += 10;
+      console.log(inputElement.value);
+      let cost = Number(inputElement.value) * 100;
+      if(cost < 4000){
+        cost += 1000;
       }
-      document.querySelector('.js-total-cost').innerHTML = `$${cost}`;
+      document.querySelector('.js-total-cost').innerHTML = `$${cost/100}`;
     }
   </script>
 </body>

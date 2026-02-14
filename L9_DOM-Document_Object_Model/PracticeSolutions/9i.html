@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>9i upgraded CartQuantity Feature</title>
+  </head>
+  <body>
+    <p>Cart Quantity</p>
+    <p>
+      <button onclick=" 
+        // console.log(`Cart Quantity: ${cartQuantity}`);
+        showCartOnPage();
+      ">
+        Show Quantity
+      </button>
+    
+    <button 
+      onclick="
+        updateCartQuantity(1);
+      ">
+          Add to cart
+    </button>
+    </p>
+
+    <button 
+      onclick="
+        if(cartQuantity<0){
+          alert('not enough items in the cart');
+          return;
+        }
+          updateCartQuantity(-1);
+      ">
+          Remove from cart
+    </button>
+    <button 
+      onclick="
+        cartQuantity *= 0;
+        showCartOnPage();
+        // console.log(`Cart Quantity ${cartQuantity}`);
+      ">
+          Reset Cart
+    </button>
+
+    <p>
+        <button 
+          onclick="
+            updateCartQuantity(2);
+          ">
+            +2
+        </button>
+
+        <button 
+          onclick="
+             updateCartQuantity(3);
+          ">
+            +3
+        </button>
+
+        <button 
+            onclick="
+                updateCartQuantity(-2);
+            ">
+              -2
+        </button>
+    </p>
+
+    <p class="js-show-quantity">------------------</p>
+
+  <script>
+      let cartQuantity = 0;
+
+        function showCartOnPage(){
+          let outputElement = document.querySelector('.js-show-quantity');
+          outputElement.innerHTML = `Cart Quantity: ${cartQuantity}`;
+        }
+
+        function updateCartQuantity(value){
+
+          if(cartQuantity + value > 10){
+            alert('cart is full');
+            return;
+          }
+          if(cartQuantity + value < 0){
+            alert('not enough item');
+            return;
+          }
+
+            cartQuantity += value;
+            // console.log(`Cart Quantity ${cartQuantity}`);
+            showCartOnPage();
+        }
+  </script>
+</body>
+</html>

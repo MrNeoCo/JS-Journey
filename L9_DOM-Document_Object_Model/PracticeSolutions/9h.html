@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>9g - OnKeyup</title>
+</head>
+<body>
+
+  <input placeholder="Typing..." class="js-input"
+
+    onkeyup="
+
+      const inputElement = document.querySelector('.js-input');
+      document.querySelector('.js-output-element')
+        .innerHTML = inputElement.value
+  ">
+  <p class="js-output-element "></p>
+
+  <script>
+
+  </script>
+</body>
+</html>
