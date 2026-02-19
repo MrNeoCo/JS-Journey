@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>11c</title>
+</head>
+<body>
+  
+  <script>
+    function arraySwap(arr){
+      const first = arr[0];
+      const last = arr[arr.length-1];
+
+      arr[0] = last;
+      arr[arr.length-1] = first;
+      console.log(arr)
+    }
+
+    arraySwap([1, 20, 22, 24, 5]);
+    arraySwap(['hi', 'hello', 'good']);
+  </script>
+</body>
+</html>
