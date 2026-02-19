@@ -4,8 +4,12 @@
   <title>arrays and loop</title>
 </head>
 <body>
-  
+
   <script>
+    // -------------Arrays--------------
+    // ======================================================
+
+    /*
     let myArray = [10,20,30];
     console.log(myArray);
 
@@ -21,6 +25,72 @@
     console.log(Array.isArray([1,2]));
 
     console.log(myArray.length);
+
+    myArray.push(100);
+    console.log(myArray)
+
+    myArray.splice(0,2);
+    console.log(myArray);
+
+    */
+
+    // -------------Loops--------------
+    // ======================================================
+    /*
+    let i = 1;
+      while(i<=5){
+        console.log(i);
+        i++;
+      }
+
+    for(let i=1; i<=5; i++){
+      console.log(i);
+    }
+
+    let randomNumber = 0;
+    while(randomNumber < 0.5){
+      randomNumber = Math.random();
+    }
+    console.log(randomNumber);
+
+    */
+
+    // -------------itrating through an Arrays--------------
+    // ======================================================
+/*
+    let todoList = [
+      'make food',
+      'do rivision',
+      'watch satsang'
+    ];
+
+    for(index = 0; index<= todoList.length-1; index++){
+      console.log(todoList[index]);
+    }
+*/
+    let numberArray = [1,1,3];
+    let total = 0;
+    for(let i=0; i<numberArray.length; i++){
+      total += numberArray[i];
+    }
+    console.log(total);
+
+    let doubleArray = [];
+    for(let i = 0; i<numberArray.length; i++){
+        const twice = numberArray[i] * 2;
+      doubleArray[i] = twice;
+    }
+    console.log(doubleArray);
+    
+    let doubled = [];
+    for(let i=0; i<numberArray.length; i++){
+      let nums = numberArray[i];
+      doubled.push(nums * 2);
+    }
+    console.log(doubled);
+
+    
+
   </script>
 </body>
 </html>
