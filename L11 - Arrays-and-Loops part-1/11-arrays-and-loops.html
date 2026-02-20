@@ -68,6 +68,7 @@
       console.log(todoList[index]);
     }
 */
+/*
     let numberArray = [1,1,3];
     let total = 0;
     for(let i=0; i<numberArray.length; i++){
@@ -88,7 +89,21 @@
       doubled.push(nums * 2);
     }
     console.log(doubled);
+*/
 
+    const array1 = [1,2,3];
+    const array2 = array1;
+    console.log(array1);
+    console.log(array2);
+//  Changes made to array2 but array1 is also modified with same change let's fix it below
+    array2.push(4);
+    console.log(array1);
+    console.log(array2);
+//  This is how we create the copy of the arrays
+    array2.slice();
+    console.log(array2);
+    array2.push(10);
+    console.log(array2); // only changes the array2
     
 
   </script>

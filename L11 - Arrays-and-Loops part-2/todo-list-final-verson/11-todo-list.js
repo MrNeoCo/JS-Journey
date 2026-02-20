@@ -44,7 +44,7 @@
     const dueDate = dueDateElement.value;
 
     if(name === ''){
-      errorElement.innerHTML = `must name your todo`;
+      errorElement.innerHTML = ` must name your todo*`;
       return;
     }else{
       errorElement.innerHTML = '';
