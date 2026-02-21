@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>11p</title>
+</head>
+<body>
+  
+  <script>
+    const stringArray = ['hello','world','search','good', 'search'];
+    // const stringArray = ['hello','world','good',];
+    let found = 0;
+    let notFound = 0;
+    for(let i=0; i<stringArray.length; i++){
+      if(stringArray[i] === 'search'){
+        found = i;
+        break;
+      }
+    }
+    if(found !== 0){
+      console.log(`'search' is found on index : ${found}`);
+    }else{
+      console.log(-1);
+    }
+    
+    
+  </script>
+</body>
+</html>
