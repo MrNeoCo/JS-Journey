@@ -5,5 +5,22 @@
 </head>
 <body>
   
+  <script>
+    function removeEgg(string){
+      const result = [];
+      let count = 1;
+
+      for(let i=0; i<string.length; i++){
+        if(string[i] === 'egg' && count < 3){
+          count++;
+          continue;
+        }else{
+          result.push(string[i]);
+        }
+      }
+      return result;
+    }
+    console.log(removeEgg(['egg','apple','egg','egg','ham',]));
+  </script>
 </body>
 </html>
