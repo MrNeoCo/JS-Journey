@@ -4,6 +4,31 @@
   <title>11u</title>
 </head>
 <body>
-  
+  <script>
+    // let arr = ['egg','apple','egg','egg','ham'];
+    // console.log(arr.reverse());
+    // console.log(arr.reverse());
+
+    const food = ['egg','apple','egg','egg','ham',];
+    function removeEgg(string){
+      const result = [];
+      let count = 1;
+      let copy = food.slice();
+      copy.reverse();
+
+      for(let i=0; i<string.length; i++){
+        if(copy[i] === 'egg' && count < 3){
+          count++;
+          continue;
+        }else{
+          result.push(copy[i]);
+        }
+      }
+      result.reverse();
+      return result;
+    }
+    console.log(food);
+    console.log(removeEgg(food));
+  </script>
 </body>
 </html>
