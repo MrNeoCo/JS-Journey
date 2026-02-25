@@ -5,11 +5,20 @@
         };
 
         updateScoreElement();
-// ------------------------------------------
-        setInterval(function(){
-          let playerMove = pickComputerMove();
-          playGame(playerMove);
-        }, 1000);
+        let isAutoPlay = false;
+        let intervalId;
+      function autoPlay(){
+          if(!isAutoPlay){
+            intervalId = setInterval(function(){
+            let playerMove = pickComputerMove();
+            playGame(playerMove);
+          }, 1000);
+            isAutoPlay = true;
+          }else {
+            clearInterval(intervalId);
+            isAutoPlay = false;
+          }  
+      }
 // ----------------------------------------
 
         function playGame(playerMove){

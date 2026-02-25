@@ -39,7 +39,11 @@
             localStorage.removeItem('score');
             updateScoreElement();
             " class="reset-score-button">Reset Score</button>
-      <button class="auto-play-button">AutoPlay</button>
+
+      <button onclick="
+        autoPlay();
+      " 
+        class="auto-play-button">AutoPlay</button>
 
       <script src="L12-rock-paper-scissors-async.js"></script>
     </body>
