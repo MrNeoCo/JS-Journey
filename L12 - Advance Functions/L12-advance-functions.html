@@ -50,7 +50,14 @@
 
     setTimeout(function(){
       console.log('timeout')
+      console.log('timeout2')
     }, 3000);
+
+    console.log('next line');
+
+    setInterval(function(){
+      console.log('interval');
+    }, 4000);
   </script>
  </body>
  </html>
