@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>12d</title>
+</head>
+<body>
+    <button class="start-finished-button" onclick=" loadingButton(); ">Start</button>
+    <script>
+        const startButton = document.querySelector('.start-finished-button');
+        function loadingButton(){
+            startButton.innerHTML = 'Loading...'
+            setTimeout(function(){
+                startButton.innerHTML = 'Finished!'
+            }, 1000);
+        };
+    </script>
+</body>
+</html>
