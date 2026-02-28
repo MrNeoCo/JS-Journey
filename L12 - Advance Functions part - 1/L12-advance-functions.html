@@ -4,8 +4,20 @@
   <title>Advance Functions</title>
  </head>
  <body>
-  
+    <button class="js-button">Click</button>
   <script>
+
+// ------------addEventListener Lesson - 12 Advance Function--------------
+    const buttonElement = document.querySelector('.js-button');
+    const eventListener = () => {
+      console.log('Click');
+    }
+    buttonElement.addEventListener('click', eventListener);
+    // buttonElement.removeEventListener('click', eventListener);
+    buttonElement.addEventListener('click', ()=>{
+      console.log('Click2');
+    });
+// ------------addEventListener Lesson - 12 Advance Function--------------
 
 /*    
     function greet(){
@@ -117,6 +129,7 @@
     // const oneParam = (param) => {
     //   console.log(param);
     // }
+/*    
     const oneParam = param => {
       console.log(param);
     }
@@ -128,6 +141,14 @@
     const oneLine = () => 2+2;
 
     console.log(oneLine());
+
+    const object1 = {
+//-----Normal way we declare method in the Objects 
+      method: ()=>{},
+//--------this is recommended and shorted way of making methods in Javascript--------- 
+      method(){}
+    };
+*/
   </script>
  </body>
  </html>
