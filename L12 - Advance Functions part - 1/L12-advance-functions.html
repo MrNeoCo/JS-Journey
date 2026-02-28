@@ -1,0 +1,133 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+  <title>Advance Functions</title>
+ </head>
+ <body>
+  
+  <script>
+
+/*    
+    function greet(){
+      console.log('Hello');
+    }
+    greet();
+
+    const num = 2;
+    // const function1 = function greeting(){
+    const function1 = function(){
+      console.log('Hello2');
+    }
+
+    console.log(function1);
+    console.log(typeof function1);
+
+    function1();
+
+    const object1 = {
+      num: 2,
+      fun: function greeting(){
+        console.log('hello3');
+      }
+    };
+
+    object1.fun();
+
+    function display(param){
+      console.log(param)
+    }
+    display(2);
+
+    function run(param){
+      param();
+    }
+
+    run(function(){
+      console.log('hello4')
+    })
+
+*/    
+/*
+    setTimeout(function(){
+      console.log('timeout')
+      console.log('timeout2')
+    }, 3000);
+
+    console.log('next line');
+
+    setInterval(function(){
+      console.log('interval');
+    }, 4000);
+*/    
+/*
+    [
+      'make dinner',
+      'wash dishes',
+      'watch youtube'
+    ].forEach(function(value, index){
+      console.log(value, index);
+    });
+*/
+
+// -------------------Advance Functions Part - 2-----------------------
+/*
+    function regularFunction(){
+      console.log('regularFunction');
+    }
+    regularFunction();
+
+    const arrowFunctoin = () => {
+      console.log('arrowFunction');
+    }
+
+    arrowFunctoin();
+*/
+/*
+    function regularFunction(param1, param2){
+      console.log(`regularFunction ${param1} ${param2}`);
+      return 5+4;
+    }
+    regularFunction(1, 10);
+    
+    const arrowFunctoin = (param1, param2) => {
+      console.log(`arrowFunction ${param1} ${param2}`);
+      return 5+2;
+    }
+
+    arrowFunctoin(11, 20);
+
+*/
+/*
+    function regularFunction(param1, param2){
+      console.log(`regularFunction ${param1} ${param2}`);
+      return 5+4;
+    }
+    console.log(regularFunction(1, 10));
+    
+    const arrowFunctoin = (param1, param2) => {
+      console.log(`arrowFunction ${param1} ${param2}`);
+      return 5+2;
+    }
+
+    console.log(arrowFunctoin(11, 20));
+*/
+
+// --------------Shortcut of Arrow Functions oneline and oneparam-----------------
+
+    // const oneParam = (param) => {
+    //   console.log(param);
+    // }
+    const oneParam = param => {
+      console.log(param);
+    }
+    oneParam('oneParam Shortcut');
+
+    // const oneLine = () => {
+    //   return 2+2;
+    // }
+    const oneLine = () => 2+2;
+
+    console.log(oneLine());
+  </script>
+ </body>
+ </html>
