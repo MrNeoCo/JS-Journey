@@ -26,10 +26,44 @@
 
 // ------------implementation of addEventListeners---------------------
       const rockButton = document.querySelector('.js-rock-button');
+      const paperButton = document.querySelector('.js-paper-button');
+      const scissorButton = document.querySelector('.js-scissor-button');
+      const resetScoreButton = document.querySelector('.js-reset-score-button');
+      const autoPlayButton = document.querySelector('.js-auto-play-button');
+
       // rockButton.addEventListener('click',playGame('rock')); // becomes ('click', undefined) while it need to be (event, function) event listeners look for these two parameters
       rockButton.addEventListener('click', ()=>{
         playGame('rock');
       });
+      paperButton.addEventListener('click', () => {
+        playGame('paper');
+      })
+      scissorButton.addEventListener('click', () => {
+        playGame('scissor');
+      });
+
+      resetScoreButton.addEventListener('click', () => {
+            score.wins = 0;
+            score.ties = 0;
+            score.loses = 0;
+            localStorage.removeItem('score');
+            updateScoreElement();
+      });
+
+      autoPlayButton.addEventListener('click',()=>{
+        autoPlay();
+      });
+
+
+      document.body.addEventListener('keydown', (event) => {
+          if(event.key === 'r'){
+            playGame('rock');
+          }else if(event.key === 'p'){
+            playGame('paper');
+          }else if(event.key === 's'){
+            playGame('scissor');
+          }
+        });
 
         function playGame(playerMove){
           const computerMove = pickComputerMove();
