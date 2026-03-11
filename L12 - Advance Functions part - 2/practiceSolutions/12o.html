@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>12n</title>
+  <title>12o</title>
 </head>
 <body>
 
   <script>
     function removeEgg(foods){
-      console.log(foods.filter((value, index) => value !== 'egg'));
+      console.log(foods.filter((value, index)=>{
+        // if(index%2===0){
+        //   return value;
+        // }
+        return value;
+      }));
     }
     removeEgg(['egg','apple','egg','egg','ham']);
   </script>
