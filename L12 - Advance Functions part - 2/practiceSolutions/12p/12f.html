@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>12f</title>
+</head>
+<body>
+    <button 
+      class="add-to-cart-button" 
+      onclick=" addToCart(); 
+    ">Add to cart</button>
+    <p class="js-result"></p>
+    <script>
+      let timeoutId;
+      const addToCartButton = document.querySelector('.add-to-cart-button');
+      const result = document.querySelector('.js-result');
+
+    function addToCart(){
+      result.innerHTML = 'Added';
+
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(()=>{
+          result.innerHTML = ''
+      }, 2000);
+    };
+    </script>
+</body>
+</html>
