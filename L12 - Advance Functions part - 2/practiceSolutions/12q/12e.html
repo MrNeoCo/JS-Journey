@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>12e</title>
+</head>
+<body>
+    <button 
+      class="add-to-cart-button">Add to cart</button>
+    <p class="js-result"></p>
+    <script>
+      const addToCartButton = document.querySelector('.add-to-cart-button');
+      const result = document.querySelector('.js-result');
+      addToCartButton.addEventListener('click', ()=>{
+        addToCart();
+      });
+      function addToCart(){
+        result.innerHTML = 'Added';
+        setTimeout(()=>{
+            result.innerHTML = ''
+        }, 2000);
+      };
+    </script>
+</body>
+</html>
