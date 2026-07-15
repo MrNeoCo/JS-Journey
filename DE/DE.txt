@@ -1,0 +1,356 @@
+Desktop Engineer Interview Master Roadmap (eClerx)
+Phase 0 – Interview Foundation (Must Do First)
+
+Goal: Build the right troubleshooting mindset and communication skills.
+
+0.1 Desktop Engineer Role
+What does a Desktop Engineer do?
+L1 vs L2 vs L3 Support
+Daily responsibilities
+Ticket lifecycle
+Escalation matrix
+0.2 Troubleshooting Methodology
+Root Cause Analysis (RCA)
+Troubleshooting flow
+How to ask users questions
+How to document tickets
+Professional communication
+Customer handling
+0.3 Interview English
+Professional IT vocabulary
+Answer structure
+Speaking confidently
+HR questions
+Phase 1 – Windows (Most Important ⭐⭐⭐⭐⭐)
+Module 1 - Windows Fundamentals
+Operating System basics
+Windows Architecture
+Boot Process
+Windows Editions
+32-bit vs 64-bit
+Module 2 - BIOS & UEFI
+BIOS
+UEFI
+POST
+Boot Sequence
+Secure Boot
+GPT vs MBR
+BIOS Settings
+Module 3 - Windows Installation
+Clean Installation
+Upgrade Installation
+Bootable USB
+Partition Types
+Installation Process
+Drivers after Installation
+Module 4 - Windows Components
+Desktop
+Explorer
+Registry
+Services
+Startup Programs
+Module 5 - Device Manager
+Drivers
+Unknown Devices
+Updating Drivers
+Rolling Back Drivers
+Disable/Enable Device
+Module 6 - Task Manager
+CPU
+RAM
+Disk
+GPU
+Startup Apps
+Services Tab
+Module 7 - Event Viewer
+Windows Logs
+Application Logs
+Security Logs
+Error IDs
+Troubleshooting using Logs
+Module 8 - Disk Management
+Partition
+Format
+Shrink
+Extend
+Drive Letters
+GPT
+MBR
+Module 9 - Windows Recovery
+Safe Mode
+Startup Repair
+System Restore
+Recovery Environment
+Reset this PC
+Module 10 - Windows Update
+Update Process
+Update Errors
+Troubleshooting Windows Update
+Module 11 - Command Prompt
+
+Commands
+
+ipconfig
+ping
+tracert
+nslookup
+netstat
+chkdsk
+sfc
+DISM
+hostname
+whoami
+systeminfo
+Module 12 - PowerShell Basics
+Get-Help
+Get-Service
+Get-Process
+Get-ComputerInfo
+Get-EventLog
+Module 13 - Windows Troubleshooting
+Windows not booting
+BSOD
+Slow PC
+High CPU
+High RAM
+Disk 100%
+Driver Problems
+Windows Update Failures
+Login Problems
+Phase 2 – Hardware
+Components
+CPU
+RAM
+SSD
+HDD
+Motherboard
+Power Supply
+GPU
+NIC
+Docking Station
+Monitor
+Laptop Hardware
+Battery
+Adapter
+Keyboard
+Webcam
+Wi-Fi Card
+Hardware Troubleshooting
+Laptop not turning on
+No Display
+Overheating
+RAM Failure
+SSD Failure
+Charging Issues
+Phase 3 – Networking
+Networking Basics
+OSI Model
+TCP/IP
+IPv4
+IPv6
+IP Addressing
+IP
+MAC
+Gateway
+DNS
+DHCP
+Subnet Mask
+Network Types
+LAN
+WAN
+VPN
+Wi-Fi
+Ethernet
+Network Commands
+ipconfig
+ping
+tracert
+nslookup
+netstat
+arp
+pathping
+Troubleshooting
+
+Internet Not Working
+
+Slow Network
+
+DNS Issue
+
+VPN Issue
+
+Limited Connectivity
+
+Phase 4 – Active Directory
+Introduction
+Domain
+Forest
+Tree
+Domain Controller
+Objects
+Users
+Computers
+Groups
+OU
+User Management
+Password Reset
+Unlock
+Disable
+Enable
+Group Management
+Security Groups
+Distribution Groups
+Group Policy
+What is GPO
+Why companies use it
+Interview Scenarios
+
+Forgot Password
+
+User Locked
+
+Cannot Login
+
+Account Disabled
+
+Phase 5 – Microsoft 365
+Outlook
+OST
+PST
+Profiles
+Mailbox
+Rules
+
+Troubleshooting
+
+Outlook Won't Open
+OST Corrupt
+Mailbox Full
+Teams
+Login
+Audio
+Video
+Screen Sharing
+
+Troubleshooting
+
+Microphone
+Camera
+Login Issues
+OneDrive
+Sync
+Storage
+Sharing
+Files On Demand
+Word
+
+Basic Support
+
+Excel
+
+Basic Support
+
+PowerPoint
+
+Basic Support
+
+Phase 6 – Ticketing Tools
+ServiceNow
+Jira
+BMC Remedy
+ManageEngine
+
+Understand
+
+Incident
+Problem
+Change
+Service Request
+SLA
+Priority
+Escalation
+Resolution
+Closure
+Phase 7 – Remote Support
+Quick Assist
+TeamViewer
+AnyDesk
+BeyondTrust
+RDP
+Phase 8 – Microsoft Entra ID
+Users
+Groups
+MFA
+Password Reset
+Device Registration
+Phase 9 – Microsoft Intune
+Device Enrollment
+Compliance
+Configuration Profiles
+Policies
+Software Deployment
+Remote Wipe
+Phase 10 – Security
+BitLocker
+Defender
+Antivirus
+MFA
+Password Policies
+Phishing
+USB Restrictions
+Phase 11 – ITIL
+Incident
+Problem
+Change
+Service Request
+SLA
+Priority
+
+Real-life examples for each.
+
+Phase 12 – Interview Mastery
+HR Questions
+Tell me about yourself.
+Why eClerx?
+Why should we hire you?
+Strengths
+Weaknesses
+Technical Questions
+Boot Process
+BIOS vs UEFI
+Safe Mode
+Event Viewer
+BSOD
+DNS vs DHCP
+HDD vs SSD
+VPN
+Outlook
+Active Directory
+Group Policy
+Slow PC
+Internet Not Working
+Laptop Not Turning On
+MFA
+BitLocker
+Ticket Priority
+SLA
+Live Mock Interviews
+HR Round
+Technical Round
+Scenario-Based Round
+Spoken English Feedback
+Confidence Training
+📚 How We'll Learn Every Module
+
+To keep things systematic, every module will follow the exact same format:
+
+Concept – What it is.
+Why It Matters – Why companies use it.
+How It Works – Internal working explained simply.
+Where You'll Use It – Real desktop support scenarios.
+Hands-on Practice – Windows steps or commands to try.
+Troubleshooting – Common problems and how to solve them.
+Interview Questions – Most frequently asked questions.
+Professional Answers – How to answer confidently in English.
+Quick Revision Notes – One-page summary.
+Mini Quiz – To check your understanding.
